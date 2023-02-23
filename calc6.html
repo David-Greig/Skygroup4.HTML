@@ -1,0 +1,32 @@
+<html>
+    <style>
+        span{
+            color:red
+        }
+        </style>
+<script>
+    function addThem(){
+       
+        let firstNum=scrn1.value;
+        let secondNum=scrn2.value;
+
+        if(firstNum==""){
+           errFirstNumber.innerHTML="First Number is missing"
+        }else{
+           errFirstNumber.innerHTML=""
+        }    
+        if(secondNum==""){
+            errSecondNumber.innerHTML="Second number is missing"
+        }else{
+            errSecondNumber.innerHTML=""
+        }
+        }
+     
+</script>
+<input type="text" id="scrn1"> <br>
+<span id="errFirstNumber"> </span><br>
+<input type="text" id="scrn2"> <br>
+<span id="errSecondNumber"> </span><br>
+<input type="button" value="+" onclick="addThem()"> <br>
+<input type="text" id="scrn3"><br>
+</html>
